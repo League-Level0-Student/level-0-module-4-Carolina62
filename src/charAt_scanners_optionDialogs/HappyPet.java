@@ -20,28 +20,41 @@ public class HappyPet {
 					new String[] { "Feed it", "Take it for a walk", "Cuddle it" }, null);
 
 			// 5. Use user input to call the appropriate method created in step 4.
-System.out.println(task);
+	System.out.println(task);
+	if (task == 0) {
+	JOptionPane.showMessageDialog(null, "Yum!");
+}
 
+if (task == 1) {
+	JOptionPane.showMessageDialog(null, "Pet may get tired");
+}
+ 
+if (task == 2) {
+	JOptionPane.showMessageDialog(null,"Pet might not like being cuddled or might really like it" );
+}
 			// 6. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
-			
+	if(task == 2) {
+		JOptionPane.showMessageDialog(null, "You really love your pet!");
 	}
+
+
+
+	}
+	
 
 	// 4. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
 		void feedPet() {
-			JOptionPane.showMessageDialog(null, "Yum!");
 			happinessLevel += 1;
 		}
 		
 		void Walk() {
-			JOptionPane.showMessageDialog(null, "Pet may get tired");
 			happinessLevel += 1;
 		}
 		
 		void Cuddle() {
-			JOptionPane.showMessageDialog(null, "Pet might not like being cuddled or it might make pet really happy");
 			happinessLevel +=1;
 		}
 	
