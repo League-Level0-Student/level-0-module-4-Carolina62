@@ -2,7 +2,7 @@ package charAt_scanners_optionDialogs;
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
-
+import javax.swing.JOptionPane;
 
 public class StringMethods1 {
 	public static void main(String[] args) {
@@ -20,15 +20,22 @@ public class StringMethods1 {
 		//    HINT: use .length() to determine how many loops
 		for (int i = 0; i < 9; i++) {
 			System.out.println((s.charAt(i)));
-		}
 		
+		}
 		// 5. Pick a char inside your String, and use a loop to determine
 		//    what position/index in the String the char is located.
 		//    Print the char's position to the console.
 		//    EXAMPLE: if your string is "abc" and you are searching 
 		//             for char 'b', then print "b is at index 1"
 		
+		for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if (c == 'c') {
+				JOptionPane.showMessageDialog(null, c + " is at index " + i);
+				
+			}
+		}
+	
 	}
 }
-
 
