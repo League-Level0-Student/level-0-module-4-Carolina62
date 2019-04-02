@@ -11,13 +11,13 @@ public static void main(String[] args) {
 	String pi = "3.1415926535897932384626433832";
 	System.out.println(pi.charAt(0));
 	System.out.println(pi.charAt(3));
-	System.out.println(7);
-	
+	System.out.println(pi.charAt(6));
 	for (int i = 0; i < pi.length(); i++) {
 	System.out.println(pi.charAt(i));
 		
 	}
 }
+
 	// 1. Make a main method and make sure your program can run
 
 	// 2. Make a String variable to hold the value of Pi. You could use http://www.piday.org/million/ for the value.
@@ -33,13 +33,9 @@ public static void main(String[] args) {
 	// *7. Compare the users' char to the next digit of Pi
 	// *8. If they are correct, print out "correct". If they are not, print "incorrect" to System.err.println
 
-	static void speak(char pi) {
-		try {
-			Runtime.getRuntime().exec("say " + pi).waitFor();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+	static void speak(char c) { 
+		System.out.println(c);
+	} 
 
 	private static void pause(int seconds) {
 		try {
@@ -56,6 +52,5 @@ public static void main(String[] args) {
 	}
 
 }
-
 
 
